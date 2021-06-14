@@ -3,7 +3,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   line-height: 1.5;
-  background-color: lightpink;
+  background-color: rgba(255, 182, 193, 0.486);
 }
 
 /* Select all h1, h2, ..., h6 tags */
@@ -27,6 +27,6 @@ pre code {
   white-space: pre-line;
 }
 
-h1 {
+h1, h2, h3 {
   text-align: center;
 }
