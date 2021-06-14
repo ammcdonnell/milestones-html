@@ -25,3 +25,7 @@ pre {
 pre code {
   white-space: pre-line;
 }
+
+h1 {
+  text-align: center;
+}
