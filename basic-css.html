@@ -5,7 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+<!-- style tag for content below line 23 -->
+<style>
+  p.ex1 {
+    margin: 35px 70px
+  }
+
+  div{
+    border: 1px solid black;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+ul.a {list-style-type: square;}
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</style>
 </head>
+
 <body>
 <h1>Common CSS Properties</h1>
 <p>The style attribute specifies an inline style for an element. There are many CSS properties that can be used with the style attribute.</p>
@@ -19,58 +48,24 @@
 <p style="font-weight: bold"><strong>Font-weight:</strong> The CSS font-weight property is used to indicate how bold the text characters should be. The font-weight property can be assigned a multiple of 100, from 100 to 900 (900 being the boldest). This property can also be assigned normal, bold, lighter, and bolder.</p>
 <p style = "background-color: lightblue"> The CSS background-color property sets the background color of an element </p>
 <div style="background-image: url('background.jpeg');">The CSS background-image property specifies an image to use as the background of an element</div>
-<style>
-  ul.a {list-style-type: square;}
-</style>
+
 <ul class = "a">
   <li>This CSS list-style-type property specifies the type of list-item marker in a list. </li>
 </ul>
-<p>The CSS height and width property are used to set the height and width of an element.
-</p>
-<img src = "image.jpeg" height = "150">
+<p>The CSS height and width property are used to set the height and width of an element.</p>
+<img src = "image.jpeg" height = "150" alt = "description">
 
-
-
-<style>
-  p.ex1 {
-    margin: 35px 70px
-  }
-</style>
 <p class = "ex1">The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
 <p class = "ex1">With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
-</p>
 
-<style>
-  div{
-    border: 1px solid black;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-}
-</style>
 <div>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
 
   With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</div>
-</style>
 
 <p>The CSS border-style property specifies what kind of border to display</p>
 <p>The following Values are allowed</p>
 <p>The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
 
-<style>
-p.dotted {border-style: dotted;}
-p.dashed {border-style: dashed;}
-p.solid {border-style: solid;}
-p.double {border-style: double;}
-p.groove {border-style: groove;}
-p.ridge {border-style: ridge;}
-p.inset {border-style: inset;}
-p.outset {border-style: outset;}
-p.none {border-style: none;}
-p.hidden {border-style: hidden;}
-p.mix {border-style: dotted dashed solid double;}
-</style>
 <p class="dotted">A dotted border.</p>
 <p class="dashed">A dashed border.</p>
 <p class="solid">A solid border.</p>
@@ -81,10 +76,9 @@ p.mix {border-style: dotted dashed solid double;}
 <p class="outset">An outset border.</p>
 <p class="none">No border.</p>
 <p class="hidden">A hidden border.</p>
-<p class="mix">A mixed border.</p></body>
-</html>
-
-
-<p>
+<p class="mix">A mixed border.</p>
+<div>
   <a href = "index.html">return to home page</a>
-</p>
+</div>
+</body>
+</html>
