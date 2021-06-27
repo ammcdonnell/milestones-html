@@ -11,7 +11,7 @@
     margin: 35px 70px
   }
 
-  div{
+  .padding{
     border: 1px solid black;
   padding-top: 50px;
   padding-right: 30px;
@@ -20,6 +20,7 @@
 }
 
 ul.a {list-style-type: square;}
+/* border styling example */
 
 p.dotted {border-style: dotted;}
 p.dashed {border-style: dashed;}
@@ -32,6 +33,32 @@ p.outset {border-style: outset;}
 p.none {border-style: none;}
 p.hidden {border-style: hidden;}
 p.mix {border-style: dotted dashed solid double;}
+
+/*type selector example */
+
+span {
+  background-color: violet;
+}
+
+/* class selector example */
+.green {
+  color: green;
+}
+
+.yellow-bg {
+  background: #ffa;
+}
+
+.fancy {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+
+/* ID selector */
+#red-background {
+  background-color: red;
+}
+
 </style>
 </head>
 
@@ -58,7 +85,7 @@ p.mix {border-style: dotted dashed solid double;}
 <p class = "ex1">The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
 <p class = "ex1">With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
 
-<div>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+<div class = "padding">The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
 
   With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</div>
 
@@ -77,6 +104,34 @@ p.mix {border-style: dotted dashed solid double;}
 <p class="none">No border.</p>
 <p class="hidden">A hidden border.</p>
 <p class="mix">A mixed border.</p>
+
+<h2>Selectors</h2>
+<h3>Type/tag selectors</h3>
+<p>A type selector matches elements with the corresponding node name such as "p", "span" and "div" tags. Generally, type selectors can be used to make broad changes to the style of a site.</p>
+<p>Commonly, type selectors are set as defaults:</p>
+<img src = "defaultselector.PNG" height = "150" alt = "defaulttypeselector">
+<p>The type selectors in this example above are setting the display properties of certain tags to block. In this case, when these tags are used, they will have the default display of block</p>
+<p>Below is an example of the result of a type selector in action.</p>
+<img src = "typeselector.PNG" height = "100" alt = "typeselector">
+
+<p>Here's a p with text.</p>
+<span>Here's a span with text.</span>
+<span>Here's another span with text.</span>
+
+<h3>Class selectors</h3>
+<p>The CSS  class selector matches elements based on the contents of their class attribute. Via the class selector, CSS can select and access specific elements to style.</p>
+<p>Below is an example of the result of class selectors in action.</p>
+<img src ="class-selector.PNG" height = "300" width = "300" alt = "class-selector">
+<p class="green">This paragraph has green text.</p>
+<p class="green yellow-bg">This paragraph has green text and a yellow background.</p>
+<p class="green fancy">This paragraph has green text and "fancy" styling.</p>
+<p>This is just a regular paragraph.</p>
+<h3>ID Selectors</h3>
+<p>The CSS ID selector is very similar to the class selector but it matches an element based on the value of the element's id attribute rather than its class attribute. Similar to the class selector, in order for an element to be selected, its id attribute must exactly match the value named in the selector.</p>
+<p>Below is an example of the result of an ID selector in action. One difference to note is that a # is used to specify an ID vs. the use of a period when selecting a class.</p>
+<img src = "idselector.PNG" height="150" width = "300" alt = "idselector">
+<div id = "red-background">This div has a special ID on it.</div>
+<div>This is a div without a special ID.</div>
 <div>
   <a href = "index.html">return to home page</a>
 </div>
