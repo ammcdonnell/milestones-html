@@ -1,0 +1,21 @@
+.italics {
+  font-style: italic;
+  color: plum;
+}
+
+h2 {
+  color: darkblue;
+}
+
+#SectionOne {
+  color: darkcyan;
+}
+
+h1 > h2
+{
+  color: darkgray;
+}
+
+.example {
+  border-style: solid;
+}

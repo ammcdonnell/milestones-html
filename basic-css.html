@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="basic-tags-styles.css">
 <!-- style tag for content below line 23 -->
 <style>
   p.ex1 {
@@ -73,7 +74,8 @@ footer > h5 {
 </head>
 
 <body>
-<h1>Common CSS Properties</h1>
+<h1>An Overview of CSS Fundamentals</h1>
+<h2 id = "SectionOne">Common CSS Properties</h2>
 <p>The style attribute specifies an inline style for an element. There are many CSS properties that can be used with the style attribute.</p>
 <p style="color:purple"><strong>Color:</strong> The CSS color property can change the font color of a text.</p>
 <p style="text-align:center"><strong>Text-align:</strong> The CSS text-align property can be used for horizontal alignment of the inner content of a block element.</p>
@@ -115,13 +117,14 @@ footer > h5 {
 <p class="hidden">A hidden border.</p>
 <p class="mix">A mixed border.</p>
 
-<h2>Selectors</h2>
+<h2 id = "SectionTwo">Selectors</h2>
 <h3>Type/tag selectors</h3>
 <p>A type selector matches elements with the corresponding node name such as "p", "span" and "div" tags. Generally, type selectors can be used to make broad changes to the style of a site.</p>
 <p>Commonly, type selectors are set as defaults:</p>
 <img src = "defaultselector.PNG" height = "150" alt = "defaulttypeselector">
 <p>The type selectors in this example above are setting the display properties of certain tags to block. In this case, when these tags are used, they will have the default display of block</p>
-<p>Below is an example of the result of a type selector in action.</p>
+<div class = "example">
+  <p>Below is an example of the result of a type selector in action.</p>
 <img src = "typeselector.PNG" height = "100" alt = "typeselector">
 
 <p>Here's a p with text.</p>
@@ -132,8 +135,9 @@ footer > h5 {
 <ul>
   <li>Here's another list item of an unordered list</li>
 </ul>
+</div>
 
-<h3>Class selectors</h3>
+<h3 id = "SectionThree">Class selectors</h3>
 <p>The CSS  class selector matches elements based on the contents of their class attribute. Via the class selector, CSS can select and access specific elements to style.</p>
 <p>Below is an example of the result of class selectors in action.</p>
 <img src ="class-selector.PNG" height = "300" width = "300" alt = "class-selector">
@@ -143,23 +147,27 @@ footer > h5 {
 <p>This is just a regular paragraph.</p>
 <h3>ID Selectors</h3>
 <p>The CSS ID selector is very similar to the class selector but it matches an element based on the value of the element's id attribute rather than its class attribute. Similar to the class selector, in order for an element to be selected, its id attribute must exactly match the value named in the selector.</p>
-<p>Below is an example of the result of an ID selector in action. One difference to note is that a # is used to specify an ID vs. the use of a period when selecting a class.</p>
+<div class ="example">
+  <p>Below is an example of the result of an ID selector in action. One difference to note is that a # is used to specify an ID vs. the use of a period when selecting a class.</p>
 <img src = "idselector.PNG" height="150" width = "300" alt = "idselector">
 <div id = "red-background">This div has a special ID on it.</div>
 <div>This is a div without a special ID.</div>
+</div>
 
-<h3>Combinators</h3>
+<h3 id = "SectionFour">Combinators</h3>
 <p>A CSS selector can contain more than one selector and between simple selectors, we can use a combinator</p>
-<h4>Descendant combinators</h4>
+<h4 class = "italics">Descendant combinators</h4>
 <p>The descendant combinator, represented by a single space ( ) character, combines two selectors such that elements matched by the second selector are selected if they have an ancestor element matching the first selector. Selectors that utilize a descendant combinator are called descendant selectors.</p>
 <p>Below, is a small list of examples:</p>
 <img src = "descendantexample.PNG" height = "300" width = "300">
 <p>In this case above, “ ul li” signifies any list item that is a descendant of an unordered list. </p>
-<h4>Child combinators</h4>
+<h4 class = "italics">Child combinators</h4>
 <p>A child combinator “>” is placed between two CSS selectors. A child combinator requires the elements of the second selector to be the next nested level down of the elements matched by the first selector. </p>
-<p>Below, is the CSS, the HTML, and the result of the child combinator in action.</p>
+<div class = "example">
+  <p>Below, is the CSS, the HTML, and the result of the child combinator in action.</p>
 <img src = "childcombinator.PNG" height = "200" width = "350">
 <img src = "HTMLcombinator.PNG" height = "200" width ="400">
+</div>
 
 <footer>
   <h5> Header #1, in the footer. </h5>
